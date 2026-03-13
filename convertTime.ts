@@ -1,4 +1,4 @@
-export const convert12hrTo24hr = (time: string) => {
+const convert12hrTo24hr = (time: string) => {
   let separator = time.split(":");
   let hour = Number(separator[0]);
   let rest = separator[1];
@@ -14,7 +14,7 @@ export const convert12hrTo24hr = (time: string) => {
   return `${hour}:${minute}`;
 };
 
-export const convert24hrTo12hr = (time: string) => {
+const convert24hrTo12hr = (time: string) => {
   let separator = time.split(":");
   let hour = Number(separator[0]);
   let rest = separator[1];
@@ -33,3 +33,5 @@ export const convert24hrTo12hr = (time: string) => {
   }
   return `${hour}:${minute} ${period}`;
 };
+
+export { convert12hrTo24hr, convert24hrTo12hr };

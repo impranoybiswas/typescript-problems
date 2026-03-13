@@ -1,4 +1,4 @@
-function primeCheck(n: number) {
+export function primeCheck(n: number) {
   if (n < 1) return false; // prime start from 2
   if (n === 2) return true; // if number is two
   if (n % 2 === 0) return false; //for even
@@ -9,4 +9,10 @@ function primeCheck(n: number) {
   return true;
 }
 
-console.log("isPrime : ", primeCheck(4));
+export function findPrimeNumbers(nums: number[]) {
+  const result: number[] = [];
+  for (let i = 0; i < nums.length; i++) {
+    if (primeCheck(nums[i])) result.push(nums[i]);
+  }
+  return result;
+}
