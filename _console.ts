@@ -14,10 +14,14 @@ import {
   getVowelsLength,
 } from "./findVowels.ts";
 import { genarateFibonacci } from "./genarateFibonacci.ts";
-import { pyramid, rightTriangle } from "./genaratePattern.ts";
 import {
-  removeDuplicateNumber,
-  removeDuplicateString,
+  hollowRectangle,
+  pyramid,
+  Rectangle,
+  rightTriangle,
+} from "./genarateShapes.ts";
+import {
+  removeDuplicate
 } from "./RemoveDuplicate.ts";
 import { reverseSentance, reverseWord } from "./ReverseString.ts";
 
@@ -57,8 +61,8 @@ const serial3: number[] = [5, 10, 15, 25];
 // console.log("Vowels Count : ", getVowelsCount2(word));
 
 // console.log("Find Missing Number : ", findMissingNumber(serial3));
-// console.log("Remove Duplicate Number : ", removeDuplicateNumber(serial3));
-// console.log("Remove Duplicate String : ", removeDuplicateString(words));
+// console.log("Remove Duplicate Number : ", removeDuplicate(serial3));
+// console.log("Remove Duplicate String : ", removeDuplicate(words));
 
 // console.log("Reverse Word : ", reverseWord(word));
 // console.log("Reverse Sentance : ", reverseSentance(sentance));
@@ -68,5 +72,7 @@ const serial3: number[] = [5, 10, 15, 25];
 // console.log("Is Prime Number : ", primeCheck(7));
 // console.log("Find Primes : ", findPrimeNumbers(serial3));
 
-console.log(rightTriangle(5, "*"));
-console.log(pyramid(5));
+// console.log(rightTriangle({ n: 5, s: "*" }));
+// console.log(pyramid({ n: 5, s: "*" }));
+// console.log(Rectangle({ n: 5, s: "*" }, 2));
+// console.log(hollowRectangle({ n: 10, s: "*" }, 5));

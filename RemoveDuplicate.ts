@@ -1,9 +1,5 @@
-// Remove Duplicate Number
-export function removeDuplicateNumber(arr: number[]) {
-  return Array.from(new Set(arr));
-}
-
-// Remove Duplicate String
-export function removeDuplicateString(arr: string[]) {
-  return Array.from(new Set(arr));
+// Remove Duplicate Number or String
+export function removeDuplicate(arr: number[] | string[]) {
+  if (typeof arr[0] === "string") return Array.from(new Set(arr as string[]));
+  return Array.from(new Set(arr as number[]));
 }
