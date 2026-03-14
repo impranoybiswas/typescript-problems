@@ -3,6 +3,7 @@ import { calculateFactorial } from "./calculateFactorial.ts";
 import { geometricSum } from "./calculateGeometricSum.ts";
 import { total, total2 } from "./calculateTotal.ts";
 import { checkArmstrong } from "./checkArmstrong.ts";
+import { checkMobileNumber } from "./checkMobileNumber.ts";
 import { convert12hrTo24hr, convert24hrTo12hr } from "./convertTime.ts";
 import { findLargest } from "./findLargest.ts";
 import { findMissingNumber } from "./findMissingNumber.ts";
@@ -78,4 +79,6 @@ const serial3: number[] = [5, 10, 15, 25];
 // console.log(Rectangle({ n: 5, s: "*" }, 2));
 // console.log(hollowRectangle({ n: 10, s: "*" }, 5));
 
-console.log(checkArmstrong(153));
+// console.log(checkArmstrong(153));
+
+console.log(checkMobileNumber("+8801826141054"));
