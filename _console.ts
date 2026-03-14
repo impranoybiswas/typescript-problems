@@ -26,6 +26,7 @@ import {
   removeDuplicate
 } from "./RemoveDuplicate.ts";
 import { reverseSentance, reverseWord } from "./ReverseString.ts";
+import { verifyPassword } from "./verifyPassword.ts";
 
 const word: string = "JavaScript";
 const words: string[] = ["Javascript", "PHP", "Java", "Python"];
@@ -81,4 +82,6 @@ const serial3: number[] = [5, 10, 15, 25];
 
 // console.log(checkArmstrong(153));
 
-console.log(checkMobileNumber("+8801826141054"));
+// console.log(checkMobileNumber("+8801826141054"));
+
+console.log(verifyPassword("dwwer@1A"));
