@@ -1,17 +1,13 @@
-export function generatePassword(length: number = 12): string {
-  // Define character sets
-  const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  const lower = "abcdefghijklmnopqrstuvwxyz";
-  const numbers = "0123456789";
-  const symbols = "!@#$%^&*";
+import { allCherecters } from "./allCheracters.ts";
 
-  const all = upper + lower + numbers + symbols;
+export function generatePassword(length: number = 12): string {
+  const { uppercase, lowercase, numbers, symbols, all } = allCherecters();
 
   let password = "";
 
   // Ensure at least one from each category
-  password += upper[Math.floor(Math.random() * upper.length)];
-  password += lower[Math.floor(Math.random() * lower.length)];
+  password += uppercase[Math.floor(Math.random() * uppercase.length)];
+  password += lowercase[Math.floor(Math.random() * lowercase.length)];
   password += numbers[Math.floor(Math.random() * numbers.length)];
   password += symbols[Math.floor(Math.random() * symbols.length)];
 

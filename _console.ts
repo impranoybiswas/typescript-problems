@@ -23,6 +23,7 @@ import {
   Rectangle,
   rightTriangle,
 } from "./genarateShapes.ts";
+import { generateSecretKey } from "./generateSecretKey.ts";
 import {
   removeDuplicate
 } from "./RemoveDuplicate.ts";
@@ -86,6 +87,8 @@ const serial3: number[] = [5, 10, 15, 25];
 // console.log(checkMobileNumber("+8801826141054"));
 
 // console.log(verifyPassword("dwwer@1A"));
-console.log(generatePassword(8) +" : " + verifyPassword(generatePassword(8)));
+// console.log(generatePassword(8) +" : " + verifyPassword(generatePassword(8)));
 
 // console.log(generatePassword(8));
+
+console.log(generateSecretKey());
