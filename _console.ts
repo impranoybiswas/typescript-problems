@@ -15,6 +15,8 @@ import {
   getVowelsCount2,
   getVowelsLength,
 } from "./findVowels.ts";
+import { flattenArray } from "./flattenArray.ts";
+import { calculation } from "./functionObjects.ts";
 import { genarateFibonacci } from "./genarateFibonacci.ts";
 import { generatePassword } from "./genaratePassword.ts";
 import {
@@ -91,4 +93,9 @@ const serial3: number[] = [5, 10, 15, 25];
 
 // console.log(generatePassword(8));
 
-console.log(generateSecretKey());
+// console.log(generateSecretKey());
+
+// console.log(flattenArray([[1,2,3], ["a","b","d"], [4,6]]));
+
+
+console.log("Call Function in function", calculation().add(5, 10));
